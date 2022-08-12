@@ -1,0 +1,7 @@
+Test Case 1: Put Author
+ [API]------------------>PUT/https://fakerestapi.azurewebsites.net/api/v1/Authors/11
+ [Test Case ]-----------> Search By Valid BookId
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+

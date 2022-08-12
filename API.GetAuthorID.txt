@@ -1,0 +1,28 @@
+Test Case 1: Search By Valid Author ID
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors/3
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+
+
+
+
+Test Case 2: Search By Invalid Author ID
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors/,,,,,
+ [Expected Result]------> 400 Bad Req
+ [Actual Result]---------> 400 Bad Req
+ [Status]----------------->Pass 
+
+
+
+
+Test Case 3: Search By Author ID= 000000000 then any int number  
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors/0000000009
+ [Test Case ]-----------> Search By Author ID= 000000000 then any int number
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+
+

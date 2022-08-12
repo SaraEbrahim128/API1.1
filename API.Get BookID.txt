@@ -1,0 +1,38 @@
+Test Case 1: Search By Valid BookId
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/1
+ [Test Case ]-----------> Search By Valid BookId
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+
+
+
+
+Test Case 2: Search By Invalid BookId
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/,m,k
+ [Test Case ]-----------> Search By Invalid BookId
+ [Expected Result]------> 400 Bad Req
+ [Actual Result]---------> 400 Bad Req
+ [Status]----------------->Pass 
+
+
+
+Test Case 3: Search By Empty BookId
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books
+ [Test Case ]-----------> Search By Empty BookId
+ [Expected Result]------> 404 noy fount
+ [Actual Result]---------> 404 not found 
+ [Status]----------------->Pass 
+
+
+
+
+
+Test Case 4: Search By BookId = 0 then any int number  
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/09
+ [Test Case ]-----------> Search By BookId = 0 then any int number  
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+

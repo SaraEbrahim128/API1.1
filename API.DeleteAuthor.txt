@@ -1,0 +1,15 @@
+Test Case 1: Delete Existing Author 
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors/1
+ [Test Case ]-----------> Delete Existing Author 
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+
+Test Case 2: Delete Un-Existing Author 
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors/1999888888888888888
+ [Test Case ]-----------> Delete Un-Existing Author 
+ [Expected Result]------> 400 Bad Req
+ [Actual Result]---------> 400 Bad Req
+ [Status]----------------->Pass 
+

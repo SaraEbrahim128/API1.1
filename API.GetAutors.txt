@@ -1,0 +1,41 @@
+Test Case 1: Check response Code "200 OK".
+ [API]------------------> GET /https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [Test Case ]-----------> Check response Code "200 OK".
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+
+
+Test Case 2: Check Performance 
+ [API]------------------> GET /https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [ Traget URL] --------->https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [Test Case ]-----------> Check Performance 
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+
+
+
+
+
+Test Case 3: Objects inside response contain, id, idBook, firstName, lastName.
+
+
+
+
+ [API]------------------> GET /https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [Test Case ]-----------> Check response Code "200 OK".
+ [Expected Result]------> ["id": 1,
+        "idBook": 1,
+        "firstName": "First Name 1",
+        "lastName": "Last Name 1"]
+ [Actual Result]---------> "id": 1,
+        "idBook": 1,
+        "firstName": "First Name 1",
+        "lastName": "Last Name 1"
+ [Status]----------------->Pass 
+
+
+

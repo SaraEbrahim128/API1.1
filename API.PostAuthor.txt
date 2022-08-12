@@ -1,0 +1,44 @@
+Test Case 1: Register a new valid Author successfully and response code "201 Created".
+
+ [API]------------------> Post/https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [Test Case ]-----------> Register New User
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+
+
+Test Case 2: Login by this new Author.
+
+ [API]------------------> Get/https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [ Traget URL] --------->https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [Test Case ]-----------> Login User
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+
+
+Test Case 3: Register By Empty Data 
+
+ [API]------------------> Post/https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [ Traget URL] --------->https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [Test Case ]-----------> Register New User
+ [Expected Result]------> 400 bad Request 
+ [Actual Result]---------> 400 bad Request 
+ [Status]----------------->Pass 
+
+
+Test Case 4: Register By Invalid DataType [Last Name & First Name] 
+
+
+
+ [API]------------------> Post/https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [ Traget URL] --------->https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [Test Case ]-----------> Register New User
+ [Expected Result]------> 400 bad Request 
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Failed
+
+
+
